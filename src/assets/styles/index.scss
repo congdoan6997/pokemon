@@ -1,0 +1,29 @@
+@import "base";
+@import "variables";
+
+.pokemon-app {
+    background-color: $bg-color;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    .pokemon-app-header {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        margin: 20px 0 20px 0;
+        h1 {
+            display: contents;
+            font-size: 3rem;
+        }
+
+        
+    }
+
+    .pokemon-app-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 40px;
+    }
+}
